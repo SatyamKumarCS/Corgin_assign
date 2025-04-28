@@ -5,9 +5,9 @@ import Cart from './Cart';
 const CheckoutPage = () => {
   const [cart, setCart] = useState([]);
   const [products] = useState([
-    { id: 1, name: 'Product 1', price: 300, image: '/public/assets/jacket.png' },
-    { id: 2, name: 'Product 2', price: 500, image: '/public/assets/shoes.png' },
-    { id: 3, name: 'Product 3', price: 200, image: '/public/assets/tshirt.png' },
+    { id: 1, name: 'Product 1', price: 300, image: '/assets/jacket.png' },
+    { id: 2, name: 'Product 2', price: 500, image: '/assets/shoes.png' },
+    { id: 3, name: 'Product 3', price: 200, image: '/assets/tshirt.png' },
   ]);
 
   // Add product to cart
