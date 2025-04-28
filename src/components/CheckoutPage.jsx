@@ -10,7 +10,7 @@ const CheckoutPage = () => {
     { id: 3, name: 'Product 3', price: 200, image: '/assets/tshirt.png' },
   ]);
 
-  // Add product to cart
+
   const addToCart = (product) => {
     const newCart = [...cart];
     const index = newCart.findIndex((item) => item.id === product.id);
@@ -29,13 +29,13 @@ const CheckoutPage = () => {
     setCart(newCart);
   };
 
-  // Remove item from cart
+
   const removeItem = (id) => {
     const newCart = cart.filter((item) => item.id !== id);
     setCart(newCart);
   };
 
-  // Calculate total
+
   const calculateTotal = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
   };
